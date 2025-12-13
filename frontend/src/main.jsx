@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import RegisterEmployer from "./components/RegisterEmployer";
 import RegisterOrganization from "./components/RegisterOrganization";
 import SearchContent from "./components/SearchContent";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} >
+      <Toaster />
+    </RouterProvider>
   </StrictMode>,
 );
