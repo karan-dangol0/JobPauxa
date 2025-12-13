@@ -64,6 +64,29 @@ const RegisterJobSeeker = () => {
             <div className="grid gap-2">
               <Label htmlFor="email">Name</Label>
 
+const RegisterJobSeeker = () => {
+    return (
+      <Card className="w-full max-w-sm my-20">
+        <CardHeader>
+          <CardTitle>Register to apply for jobs</CardTitle>
+          <CardDescription>
+            Enter your email below to register to your account
+          </CardDescription>
+          <CardAction>
+            <Button variant="link">Login</Button>
+          </CardAction>
+        </CardHeader>
+        <CardContent>
+          <form>
+            <div className="flex flex-col gap-6">
+              <div className="grid gap-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="m@example.com"
+                  required
+                />
               <Input
                 id="name"
                 type="text"

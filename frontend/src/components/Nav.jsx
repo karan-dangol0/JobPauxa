@@ -7,7 +7,7 @@ export default function Nav() {
   const [registerOpen, setRegisterOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white mb-10 w-full">
+    <nav className="bg-gray-900 text-white  w-full">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

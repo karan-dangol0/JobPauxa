@@ -7,6 +7,7 @@ import Home from "./Layouts/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import RegisterEmployer from "./components/RegisterEmployer";
 import RegisterOrganization from "./components/RegisterOrganization";
+import SearchContent from "./components/SearchContent";
 import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/", 
     element: <Home />, 
     children: [
+      {
+        index: true, 
+        element: <SearchContent />
+      },
       {
         path: "login", 
         element: <Login />,
