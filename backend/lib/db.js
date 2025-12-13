@@ -5,12 +5,10 @@ const connectDb = async (req, res) => {
     await mongoose.connect(process.env.MONGO_URI);
     console.log("MongoDb connected");
   } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: error.message,
-    });
+    console.log("Error in mongoose", error.message);
+     
 
-    process.exit(0);
+    process.exit(1);
   }
 };
 
