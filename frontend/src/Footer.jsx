@@ -12,7 +12,7 @@ export default function JobPaunxaFooter() {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300 mt-10">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -27,7 +27,7 @@ export default function JobPaunxaFooter() {
             </p>
             <div className="space-y-2">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
+                <MapPin className="w-4 h-4 mt-1 text-blue-500 shrink-0" />
                 <span className="text-sm">Kathmandu, Nepal</span>
               </div>
               <div className="flex items-center gap-2">
