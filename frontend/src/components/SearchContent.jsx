@@ -99,6 +99,6 @@ export default function SearchContent() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>
+  );
 }

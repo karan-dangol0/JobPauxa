@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
-  const [jobsOpen, setJobsOpen] = useState(false);
+  // const [jobsOpen, setJobsOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
 
   return (
@@ -32,14 +32,13 @@ export default function Nav() {
             {/* Jobs Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setJobsOpen(!jobsOpen)}
-                className="flex items-center gap-1 text-white hover:text-gray-300 transition font-medium"
+                // onClick={() => setJobsOpen(!jobsOpen)}
+                className="flex items-center gap-1 text-white hover:text-gray-300 transition font-medium" 
               >
-                Jobs
-                <ChevronDown className="w-4 h-4" />
+                <Link to="jobs">Jobs</Link>             {/*  <ChevronDown className="w-4 h-4" />*/}
               </button>
 
-              {jobsOpen && (
+            {/*  {jobsOpen && (
                 <div className="absolute top-full mt-2 bg-white text-gray-900 rounded-lg shadow-lg py-2 w-48 z-50">
                   <Link
                     to="/jobs"
@@ -47,13 +46,13 @@ export default function Nav() {
                   >
                     Browse All Jobs
                   </Link>
-                  <Link
+                  /~<Link
                     to="/categories"
                     className="block px-4 py-2 hover:bg-gray-100 transition"
                   >
                     Categories
-                  </Link>
-                  <Link
+                  </Link>~/
+                 /~ <Link
                     to="/featured-jobs"
                     className="block px-4 py-2 hover:bg-gray-100 transition"
                   >
@@ -64,16 +63,28 @@ export default function Nav() {
                     className="block px-4 py-2 hover:bg-gray-100 transition"
                   >
                     Remote Jobs
+                  </Link>~/
+                /~  <Link
+                    to="/register/employer"
+                    className="block px-4 py-2 hover:bg-gray-100 transition"
+                  >
+                    Post job
                   </Link>
+                  <Link
+                    to="/Internships"
+                    className="block px-4 py-2 hover:bg-gray-100 transition"
+                  >
+                   Internships
+                  </Link>~/
                 </div>
-              )}
+              )}*/}
             </div>
 
             <Link
               to="/companies"
               className="text-white hover:text-gray-300 transition font-medium"
             >
-              Companies
+              Events
             </Link>
 
             <Link
