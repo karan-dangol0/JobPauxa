@@ -63,7 +63,7 @@ export default function RegisterOrganization() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4 my-20 ">
         <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
           <div className="mb-6">
             <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto" />
@@ -88,7 +88,7 @@ export default function RegisterOrganization() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4 my-20">
       <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl w-full">
         {/* Progress Indicator */}
         <div className="mb-8">

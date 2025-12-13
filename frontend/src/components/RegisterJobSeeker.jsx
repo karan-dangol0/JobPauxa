@@ -16,7 +16,7 @@ import { Label } from "@/components/ui/label"
 
 const RegisterJobSeeker = () => {
     return (
-      <Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm my-20">
         <CardHeader>
           <CardTitle>Register to apply for jobs</CardTitle>
           <CardDescription>

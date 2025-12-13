@@ -16,7 +16,7 @@ import { Label } from "@/components/ui/label"
 
 const Login = () => {
     return (
-      <Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm my-10">
         <CardHeader>
           <CardTitle>Login to your account</CardTitle>
           <CardDescription>
