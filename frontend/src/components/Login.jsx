@@ -12,8 +12,10 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
+import toast from "react-hot-toast";
+import {useNavigate} from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -62,12 +64,17 @@ const Login = () => {
       console.log("Login successful:", response.data);
 
       // Store token if provided
-      if (response.data.token) {
-        localStorage.setItem("token", response.data.token);
+      if (response.data.accessToken) {
+        localStorage.setItem("accessToken", response.data.accessToken);
       }
 
       // Redirect or update state as needed
       // window.location.href = "/dashboard";
+      toast.success("Logged in", {id: 1});
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 1000);
+
     } catch (err) {
       console.error("Login error:", err);
 
