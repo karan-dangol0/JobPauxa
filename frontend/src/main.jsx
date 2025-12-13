@@ -5,7 +5,8 @@ import Login from "./components/Login";
 import RegisterJobSeeker from "./components/RegisterJobSeeker";
 import Home from "./Layouts/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import RegisterEmployer from "./components/RegisterEmployer";
+// import RegisterEmployer from "./components/RegisterEmployer";
+import RegisterOrganization from "./components/RegisterOrganization";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,14 @@ const router = createBrowserRouter([
       }, 
       {
         path: "register/employer", 
-        element: <RegisterEmployer />
+        // element: <RegisterEmployer />
+        element: <RegisterOrganization />
       },
       {
         path: "register/seeker", 
         element: <RegisterJobSeeker />
       },
+     
       
     ]
   }
