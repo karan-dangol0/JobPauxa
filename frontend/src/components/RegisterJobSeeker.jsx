@@ -14,7 +14,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 
-const RegisterJobSeeker = () => {
+{/*const RegisterJobSeeker = () => {
   const [formData, setFormData] = useState({
     name: "", 
     email: "",
@@ -47,7 +47,7 @@ const RegisterJobSeeker = () => {
       console.log(error);
     }
   };
-  return (
+ /~ return (
     <Card className="w-full max-w-sm">
       <CardHeader>
         <CardTitle>Register to apply for jobs</CardTitle>
@@ -62,7 +62,7 @@ const RegisterJobSeeker = () => {
      
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
-              <Label htmlFor="email">Name</Label>
+              <Label htmlFor="email">Name</Label>~/*/}
 
 const RegisterJobSeeker = () => {
     return (
@@ -77,7 +77,7 @@ const RegisterJobSeeker = () => {
           </CardAction>
         </CardHeader>
         <CardContent>
-          <form>
+          {/* <form> */}
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>

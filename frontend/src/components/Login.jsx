@@ -15,8 +15,9 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const Login = () => {
-    return (
-      <Card className="w-full max-w-sm my-10">
+  // return (
+  {
+    /* <Card className="w-full max-w-sm my-10">
         <CardHeader>
           <CardTitle>Login to your account</CardTitle>
           <CardDescription>
@@ -48,7 +49,8 @@ const Login = () => {
                     Forgot your password?
                   </a>
                 </div>
-                <Input id="password" type="password" required />
+                <Input id="password" type="password" required />*/
+  }
   const [formData, setFormData] = useState({
     email: "",
     password: "",
