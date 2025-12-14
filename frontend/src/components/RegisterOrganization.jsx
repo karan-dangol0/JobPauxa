@@ -127,8 +127,8 @@ export default function RegisterOrganization() {
           {step === 1 && (
             <>
               <div>
-                <h2 className="text-indigo-600 mb-2">Create Your Account</h2>
-                <p className="text-gray-600">Enter your personal information to get started</p>
+                <h2 className="text-indigo-600 mb-2">Create Your organization account</h2>
+                <p className="text-gray-600">Enter your organization information to get started</p>
               </div>
 
               <div>
@@ -141,7 +141,7 @@ export default function RegisterOrganization() {
                   type="text"
                   {...register("fullName", { required: "Full name is required" })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  placeholder="Sabin Dangol"
+                  placeholder="Esewa"
                 />
                 {errors.fullName && (
                   <p className="text-red-500 text-sm mt-1">{errors.fullName.message}</p>
@@ -181,7 +181,7 @@ export default function RegisterOrganization() {
                   type="tel"
                   {...register("phoneNumber", { required: "Phone number is required" })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+977 "
                 />
                 {errors.phoneNumber && (
                   <p className="text-red-500 text-sm mt-1">{errors.phoneNumber.message}</p>

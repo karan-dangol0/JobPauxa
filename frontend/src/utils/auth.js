@@ -1,12 +1,12 @@
-export const setAuthToken = (token) => {
+export const setAccessToken = (token) => {
   localStorage.setItem("accessToken", token);
 };
 
-export const getAuthToken = () => {
+export const getAccessToken = () => {
   return localStorage.getItem("accessToken");
 };
 
-export const removeAuthToken = () => {
+export const removeAccessToken = () => {
   localStorage.removeItem("accessToken");
 };
 
