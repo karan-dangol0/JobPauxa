@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import userRouter from "./route/user.route.js";
 import connectDb from "./lib/db.js";
+import adminRouter from "./route/admin.route.js";
 
 const app = express();
 app.use(cors());
@@ -10,6 +11,7 @@ app.use(express.json());
 dotenv.config();
 
 app.use("/api/v1", userRouter);
+app.use("/api/v1", adminRouter);
 
 const PORT = process.env.PORT;
 app.listen(PORT || 3000, () => {

@@ -81,10 +81,10 @@ export default function Nav() {
             </div>
 
             <Link
-              to="/companies"
+              to="/post-events"
               className="text-white hover:text-gray-300 transition font-medium"
             >
-              Events
+              Post Event
             </Link>
 
             <Link

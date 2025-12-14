@@ -14,7 +14,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import toast from "react-hot-toast";
 import {useNavigate} from "react-router-dom";
-const Login = () => {
+
+
+const AdminLogin = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -53,7 +55,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_USER_AUTH}/login`,
+        `${import.meta.env.VITE_API_ADMIN_AUTH}/admin/login`,
         {
           email: formData.email,
           password: formData.password,
@@ -112,14 +114,12 @@ const Login = () => {
   };
 
   return (
-    <Card className="w-full max-w-sm my-20">
+    <div className="w-screen h-screen flex justify-center items-center">
+   <Card className="w-full max-w-sm my-20 ">
       <CardHeader>
-        <CardTitle>Login to your account</CardTitle>
-        <CardDescription>
-          Enter your email below to login to your account
-        </CardDescription>
+        <CardTitle>Admin Login</CardTitle>
+      
         <CardAction>
-          <Button variant="link">Register</Button>
         </CardAction>
       </CardHeader>
       <CardContent>
@@ -155,12 +155,7 @@ const Login = () => {
             <div className="grid gap-2">
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
-                <a
-                  href="#"
-                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                >
-                  Forgot your password?
-                </a>
+             
               </div>
               <Input
                 id="password"
@@ -191,12 +186,12 @@ const Login = () => {
         >
           {loading ? "Logging in..." : "Login"}
         </Button>
-        <Button variant="outline" className="w-full" disabled={loading}>
-          Login with Google
-        </Button>
+     
       </CardFooter>
     </Card>
+    </div>
+ 
   );
 };
 
-export default Login;
+export default AdminLogin;
