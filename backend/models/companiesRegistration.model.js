@@ -8,24 +8,6 @@ const companySchema = new mongoose.Schema(
       trim: true,
     },
 
-    location: {
-      type: String,
-      required: true,
-    },
-
-    description: {
-      type: String,
-      required: true,
-    },
-
-    industry: {
-      type: String, // e.g. "Digital Marketing"
-    },
-
-    website: {
-      type: String,
-    },
-
     email: {
       type: String,
       lowercase: true,
@@ -36,23 +18,39 @@ const companySchema = new mongoose.Schema(
       type: String,
     },
 
+    password: {
+      type: String,
+    },
+    confirmPassword: {
+      type: String,
+    },
+
+
+    location: {
+      type: String,
+      required: true,
+    },
+
+    description: {
+      type: String,
+      required: true,
+    },
+
+
+
+    website: {
+      type: String,
+    },
+
     logo: {
       type: String, // image URL
     },
 
-    size: {
-      type: String, // e.g. "1-10", "11-50", "50+"
+    registrationImg: {
+      type:  String
     },
 
-    foundedYear: {
-      type: Number,
-    },
-
-    status: {
-      type: String,
-      enum: ["Active", "Inactive"],
-      default: "Active",
-    },
+   
   },
   {
     timestamps: true,

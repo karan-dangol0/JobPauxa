@@ -12,6 +12,7 @@ import {
   FileText,
   CheckCircle2,
 } from "lucide-react";
+import axios from "axios";
 
 export default function RegisterOrganization() {
   const [step, setStep] = useState(1);
@@ -42,8 +43,11 @@ export default function RegisterOrganization() {
 
   const password = watch("password");
 
-  const onSubmit = (data) => {
+  const onSubmit = async(data) => {
     console.log("Registration Complete:", data);
+    const response = await axios.post(`${import.meta.env.VITE_API_COMPANY_AUTH}/register`, data);
+    console.log(response);
+    
     setIsSubmitted(true);
   };
 

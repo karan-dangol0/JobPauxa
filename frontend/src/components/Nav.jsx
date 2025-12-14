@@ -87,12 +87,12 @@ export default function Nav() {
               Post Event
             </Link>
 
-            <Link
+           {/* <Link
               to="/resources"
               className="text-white hover:text-gray-300 transition font-medium"
             >
               Resources
-            </Link>
+            </Link>*/}
 
             <Link
               to="/login"
